@@ -92,6 +92,11 @@ const animationTimeline = () => {
     .to(".container", 0.1, {
       visibility: "visible"
     })
+    // gsap.from("#myImage", {
+    //     duration: 1, // 动画持续时间，单位为秒
+    //     opacity: 0,  // 初始透明度
+    //     ease: "power1.inOut" // 缓动函数，使动画更平滑
+    // })
     .from(".one", 0.7, {
       opacity: 0,
       y: 10
@@ -172,8 +177,8 @@ const animationTimeline = () => {
       backgroundColor: "rgb(21, 161, 237)",
       color: "#fff"
     })
-    .to(".idea-3", 0.7, ideaTextTransLeave, "+=1.5")
-    .from(".idea-4", 0.7, ideaTextTrans)
+    .to(".idea-3", 1.5, ideaTextTransLeave, "+=1.5")
+    .from(".idea-4", 1.4, ideaTextTrans)
     .to(".idea-4", 0.7, ideaTextTransLeave, "+=1.5")
     .from(
       ".idea-5",
